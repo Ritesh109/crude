@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>retrive</title>
+</head>
+<body>
+<a href="{% url 'home' %}" >Companies list </a>
+    {{instance.company_name}} details <br>
+    company id :{{ instance.id }}<br>
+    company image :<img src='{{instance.company_logo.url}}'/> <br>
+    company city :{{ instance.company_city }}<br>
+</body>
+</html>
